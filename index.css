@@ -1,0 +1,57 @@
+/* These variables have to be set on the container or any parent of it */
+.container {
+  /* Number of items per row */
+  --grid-items-per-row: 4;
+  /*
+   * Maximum and default width of the container
+   * This has to be set to a fixed value, otherwise the item size can't be determined!
+   */
+  --grid-container-max-width: 1000px;
+  /* Gap inbetween items, horizontally and vertically */
+  --grid-gap: 10px;
+  /* Border width of each item */
+  --grid-border-width: 2px;
+}
+
+.container {
+  max-width: var(--grid-container-max-width);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: var(--grid-gap);
+}
+
+.item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: top;
+  min-width: calc(100% / var(--grid-items-per-row) - var(--grid-gap) - var(--grid-border-width) * 2);
+  border: var(--grid-border-width) solid #666;
+  border-radius: 5px;
+  background-color: #ddd;
+  filter: drop-shadow(1px 1px 3px #444);
+}
+
+
+
+
+
+/* OTHER */
+
+body {
+  font-family: sans-serif;
+}
+
+button {
+  font-size: 1rem;
+}
+
+.container:hover {
+  background-color: rgba(0, 136, 0, 0.8);
+}
+
+.container:hover .item {
+  background-color: rgba(136, 0, 0, 0.8);
+}
