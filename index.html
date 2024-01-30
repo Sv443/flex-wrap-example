@@ -9,12 +9,24 @@
   <body>
     <h2>Responsive, always left-aligned, auto-wrapping grid</h2>
     <h3>
-      Amount of items: <input id="itemAmount" type="number" value="12" min="1" />
-      <br />
-      Item size (width / height): <input id="itemWidth" type="number" value="200" min="1" /> / <input id="itemHeight" type="number" value="480" min="1" />
-      <br />
+      <table>
+        <tr>
+          <td>Amount of items in total:</td>
+          <td>
+            <input id="itemAmount" type="number" value="12" min="1" />
+          </td>
+        </tr>
+        <tr>
+          <td>Item size (width / height) in px:</td>
+          <td>
+            <input id="itemWidth" type="number" value="200" min="1" /> / <input id="itemHeight" type="number" value="480" min="1" />
+          </td>
+        </tr>
+      </table>
+
       <button id="generate">Generate</button>
     </h3>
+
     <div class="container" title="blue = container, red = item"></div>
   </body>
 </html>
