@@ -1,5 +1,6 @@
 ## A pure CSS flexbox, responsive, always left-aligned, auto-wrapping grid of 1-dimensional items
-Licensed under the [WTFPL](./LICENSE.txt), so do whatever you want with this code.  
+[Click here to open the demo page](https://sv443.github.io/flex-wrap-example/)  
+The code is licensed under the [WTFPL license](./LICENSE.txt), so you can do whatever you want with it.  
 
 ### Features:
 - Columns are always aligned
