@@ -5,7 +5,7 @@ async function generate() {
   const itemWidthValue = Number(document.querySelector("#itemWidth")?.value);
   const itemHeightValue = Number(document.querySelector("#itemHeight")?.value);
   // Set default values if NaN
-  const itemAmount = isNaN(itemAmountValue) ? 12 : itemAmountValue;
+  const itemAmount = isNaN(itemAmountValue) ? 13 : itemAmountValue;
   const itemWidth = isNaN(itemWidthValue) ? 200 : itemWidthValue;
   const itemHeight = isNaN(itemHeightValue) ? 480 : itemHeightValue;
 
