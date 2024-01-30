@@ -49,9 +49,9 @@ button {
 }
 
 .container:hover {
-  background-color: rgba(0, 136, 0, 0.8);
+  background-color: #088;
 }
 
 .container:hover .item {
-  background-color: rgba(136, 0, 0, 0.8);
+  background-color: #800;
 }
