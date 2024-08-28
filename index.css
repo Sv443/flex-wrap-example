@@ -26,7 +26,7 @@
 .item {
   display: inline-flex;
   justify-content: center;
-  align-items: top;
+  align-items: flex-start;
   min-width: calc(100% / var(--grid-items-per-row) - var(--grid-gap) - var(--grid-border-width) * 2);
   border: var(--grid-border-width) solid #666;
   border-radius: 5px;
